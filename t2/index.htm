@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    Створіть HTML-сторінку для проходження тесту.
+    Питання тесту мають два варіанти відповіді (тільки 1 правильний).
+    Після проходження тесту виведіть кількість правильних відповідей.
+
+    <main>
+        <form id="quiz-form" name=quiz>
+            <div class="question">
+                <p>1) How many letters are there in the word "Hello"?</p>
+                <label>
+                    <input type="radio" value="0" name="q1">
+                    Five (5)</label>
+                <label>
+                    <input type="radio" value="1" name="q1">
+                    Two (2)</label>
+            </div>
+            <div class="question">
+                <p>2) How many letters are there in the word "Hello"?</p>
+                <label>
+                    <input type="radio" value="0" name="q2">
+                    Five (5)</label>
+                <label>
+                    <input type="radio" value="1" name="q2">
+                    Two (2)</label>
+            </div>
+            <div class="question">
+                <p>3) How many letters are there in the word "Hello"?</p>
+                <label>
+                    <input type="radio" value="0" name="q3">
+                    Five (5)</label>
+                <label>
+                    <input type="radio" value="1" name="q3">
+                    Two (2)</label>
+            </div>
+            <button type="button" onclick="checkTest()">Завершить тест</button>
+        <div id = "result"></div>
+        </form>
+        
+    </main>
+
+</body>
+
+</html>

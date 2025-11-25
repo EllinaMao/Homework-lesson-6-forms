@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Task 5</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="controls">
+        <label>Group: 
+            <select id="groupSelect">
+                </select>
+        </label>
+        
+        <label>Lesson: 
+            <select id="lessonSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </label>
+
+        <button class="btn" onclick="loadLesson()">Select</button>
+    </div>
+
+    <div class="topic-container">
+        <label>Topic:</label>
+        <input type="text" id="topicInput" placeholder="Введіть тему заняття">
+    </div>
+
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Is present</th>
+            </tr>
+        </thead>
+        <tbody id="studentsList">
+            </tbody>
+    </table>
+
+    <button class="btn btn-save" id="saveBtn" onclick="saveAttendance()">Save</button>
+</div>
+
+</body>
+</html>

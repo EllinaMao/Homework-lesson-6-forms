@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Task 6</title>
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="search-panel">
+        <label>Direction: 
+            <select id="directionSelect">
+                <option value="Odessa - Lviv">Odessa - Lviv</option>
+                <option value="Odessa - Kharkiv">Odessa - Kharkiv</option>
+                <option value="Odessa - Kyiv">Odessa - Kyiv</option>
+            </select>
+        </label>
+        
+        <label>Date: 
+            <input type="text" id="dateInput" placeholder="24.07.2018" value="24.07.2018">
+        </label>
+
+        <button class="btn" onclick="searchTickets()">Search</button>
+    </div>
+
+    <hr>
+
+    <div id="bookingArea" class="booking-area">
+        <div class="seats-container" id="seatsGrid">
+            </div>
+
+        <div class="price-panel">
+            <span>Total price: <span id="totalPrice">0</span>$</span>
+            <button class="btn" onclick="bookTickets()">Book</button>
+        </div>
+    </div>
+
+    <div class="tickets-section">
+        <h2>My tickets:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Direction</th>
+                    <th>Date</th>
+                    <th>Seat</th>
+                </tr>
+            </thead>
+            <tbody id="ticketsTableBody">
+                </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

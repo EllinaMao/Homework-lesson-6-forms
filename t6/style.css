@@ -1,0 +1,100 @@
+    body {
+            font-family: sans-serif;
+            padding: 30px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-panel {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .search-panel select, .search-panel input {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid lightgray;
+        }
+
+        .btn {
+            padding: 5px 20px;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: lightgray;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid lightgray;
+            margin: 20px 0;
+        }
+
+        .booking-area {
+            display: none; 
+        }
+
+        .seats-container {
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(14, 1fr); 
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .seat-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid lightgray;
+            padding: 5px 2px;
+            font-size: 14px;
+        }
+
+        .seat-item input {
+            margin-right: 3px;
+        }
+
+        .seat-item.booked {
+            color: gray;
+        }
+
+        .price-panel {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .tickets-section {
+            margin-top: 50px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid gray;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+

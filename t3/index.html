@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="container">
+        Створіть HTML-сторінку з формою для введення стилізованого тексту. Після заповнення форми виведіть текст на екран
+        відповідно із зазначеними стилями.
+        <form>
+            <div class="input">
+                <input type="checkbox" name="bold" id="font-bold">
+                <label for="font-bold">Bold</label>
+                <input type="checkbox" name="underline" id="font-underline">
+                <label for="font-underline">Underline</label>
+                <input type="checkbox" name="italics" id="font-italics">
+                <label for="font-italics">Italics</label>
+                <input type="radio" name="align" id="align-left" value="left" checked>
+                <label for="align-left">Left</label>
+
+                <input type="radio" name="align" id="align-right" value = "right">
+                <label for="align-right">Right</label>
+                <input type="radio" name="align" id="align-justify" value="justify">
+                <label for="align-justify">Justify</label>
+            </div>
+            <textarea id="text-area"
+                placeholder="Type your text here...">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque tenetur tempora aliquid molestias debitis? Sapiente quos magni minima quasi labore nihil, sunt, modi eveniet ipsam perferendis quisquam inventore aut.</textarea>
+            </form>
+            <button id="btn-show">Show text</button>
+        <div class="result-section">
+
+            <h3>Result:</h3>
+            <div>
+                <div id="output-text" class="output-box"></div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

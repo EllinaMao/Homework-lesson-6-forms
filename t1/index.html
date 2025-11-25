@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href="style.css">
+    <script src = "script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--
+Створіть HTML-сторінку зі списком повідомлень на форумі і формою для додавання нового повідомлення. Після заповнення форми додайте повідомлення до списку на екрані.    
+-->
+<div id="message-list">
+        <div class="message-card">
+            <div class="message-header">
+                <span class="author">тут имя</span>
+                <span class="date">тут дата</span>
+            </div>
+            <div class="message-body">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="form-header">Add new message:</div>
+        
+        <div class="form-group">
+            <label for="name-input">Your name:</label>
+            <input type="text" id="name-input" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="text-input">Your message:</label>
+            <textarea id="text-input" placeholder=""></textarea>
+        </div>
+
+        <button class="send-btn" onclick="addMessage()">Send</button>
+    </div>
+</body>
+</html>

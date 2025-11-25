@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        
+        <section class="products">
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/f2/a0/71/f2a07180cf5c57e2494704b39b73252c.jpg" alt="Book 1">
+                <h3 class="book-title">Learning JavaScript</h3>
+                <p class="author">Ethan Brown</p>
+                <div class="price-block">
+                    <span class="price">16$</span>
+                    <button class="btn-select">Select</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/f5/2f/1b/f52f1b8c7444e6bbad758aec4493f9fa.jpg" alt="Book 2">
+                <h3 class="book-title">Learning JavaScript</h3>
+                <p class="author">Ethan Brown</p>
+                <div class="price-block">
+                    <span class="price">16$</span>
+                    <button class="btn-select">Select</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/8c/5e/2e/8c5e2e101290733861ad05c4d6e3c868.jpg" alt="Book 3">
+                <h3 class="book-title">You Don't Know JS: Scope & Closures</h3>
+                <p class="author">Kyle Simpson</p>
+                <div class="price-block">
+                    <span class="price">20$</span>
+                    <button class="btn-select">Select</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/f5/47/20/f547208555040a3dd2a11b794551db03.jpg" alt="Book 4">
+                <h3 class="book-title">JavaScript & JQuery</h3>
+                <p class="author">Jon Duckett</p>
+                <div class="price-block">
+                    <span class="price">22$</span>
+                    <button class="btn-select">Select</button>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <form id="order-form">
+                <div class="form-group">
+                    <label>Book:</label>
+                    <input type="text" aria-readonly="true" 
+                    id="order-book" readonly 
+                    required
+                    placeholder="Select a book...">
+                </div>
+
+                <div class="form-group">
+                    <label>Quantity:</label>
+                    <input type="number" min="1" 
+                    required
+                    id = 'order-amount'
+                    value="1">
+                </div>
+
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text"
+                    id='order-name'
+                    required>
+                    
+                </div>
+
+                <div class="form-group">
+                    <label>Delivery address:</label>
+                    <input type = "text" id = "order-adress"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label>Delivery date:</label>
+                    <input type="date"
+                    id="order-date"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label>Comment:</label>
+                    <textarea rows="3"></textarea>
+                </div>
+
+                <button type="button" class="btn-buy" id = "btn-buy">Buy</button>
+            </form>
+        </aside>
+
+    </main>
+</body>
+</html>
