@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f0e6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.products {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #d0c8b6;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px; 
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.book-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px; 
+}
+
+.author {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 15px 0;
+    flex-grow: 1;
+}
+
+.price-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border: 1px solid #aaa;
+    background: #e1e1e1;
+    background: linear-gradient(to bottom, #f0f0f0, #d8d8d8);
+    padding: 6px 20px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #d0d0d0;
+    background: linear-gradient(to bottom, #e0e0e0, #c8c8c8);
+}
+
+button:active {
+    background: #c8c8c8;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.btn-select {
+    min-width: 100px;
+}
+
+.sidebar {
+    flex: 1.2;
+    min-width: 300px;
+    background-color: #fbf9f3;
+    border: 1px solid #d0c8b6;
+    padding: 25px;
+    border-radius: 4px;
+    position: sticky;
+    top: 20px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.form-group label {
+    flex: 0 0 130px;
+    font-weight: 600;
+    color: #555;
+    padding-top: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: #fff;
+}
+
+.form-group input[readonly] {
+    background-color: #f0f0f0;
+    color: #666;
+    font-style: italic;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-buy {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
