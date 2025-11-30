@@ -54,7 +54,7 @@
         <aside class="sidebar">
             <form id="order-form">
                 <div class="form-group">
-                    <label>Book:</label>
+                    <label for="order-book">Book:</label>
                     <input type="text" aria-readonly="true" 
                     id="order-book" readonly 
                     required
@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Quantity:</label>
+                    <label for="order-amount">Quantity:</label>
                     <input type="number" min="1" 
                     required
                     id = 'order-amount'
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Name:</label>
+                    <label for="order-name">Name:</label>
                     <input type="text"
                     id='order-name'
                     required>
@@ -78,21 +78,22 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Delivery address:</label>
+                    <label for="order-adress">Delivery address:</label>
                     <input type = "text" id = "order-adress"
-                    required>
+                    required><!--text area?-->
                 </div>
 
                 <div class="form-group">
-                    <label>Delivery date:</label>
+                    <label for="order-date">Delivery date:</label>
                     <input type="date"
                     id="order-date"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label>Comment:</label>
-                    <textarea rows="3"></textarea>
+                    <label for="order-comment">Comment:</label>
+                    <textarea rows="3"
+                    id="order-comment"></textarea>
                 </div>
 
                 <button type="button" class="btn-buy" id = "btn-buy">Buy</button>
